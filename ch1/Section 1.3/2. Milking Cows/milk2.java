@@ -49,7 +49,6 @@ class milk2 {
         }
 
         out.println(maxInterval + " " + maxGap);
-
         out.close();
     }
 }
