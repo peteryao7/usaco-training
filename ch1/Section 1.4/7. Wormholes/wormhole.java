@@ -40,9 +40,6 @@ class wormhole {
             }
         }
 
-        // for (int i = 0; i < nextRight.length; i++)
-        //     System.out.println("X,Y = " + X[i] + ", " + Y[i] + ", i = " + i + ", nextRight[i] = " + nextRight[i]);
-
         int res = count();
         out.println(res);
         out.close();
@@ -56,8 +53,6 @@ class wormhole {
             if (partner[i] == 0)
                 break;
         }
-
-        // System.out.println("i = " + i);
 
         if (i > n) {
             return cycleExists();
@@ -78,20 +73,13 @@ class wormhole {
     }
 
     private static int cycleExists() {
-        // for (int i = 1; i <= n; i++) {
-        //     System.out.println("i = " + i + ", partner[i] = " + partner[i]);
-        // }
-
         for (int i = 1; i <= n; i++) {
             int pos = i;
-            // System.out.println("pos = " + pos);
 
             for (int count = 0; count < n; count++) {
                 pos = nextRight[partner[pos]];
-                // System.out.println("look for cycle pos = " + pos);
             }
 
-            // System.out.println("last pos = " + pos);
             if (pos != 0)
                 return 1;
         }
