@@ -57,13 +57,9 @@ class ariprog {
 
         for (int p = 0; p <= m; p++) {
             for (int q = p; q <= m; q++) {
-                // System.out.print(p * p + q * q);
-                // System.out.print(" ");
                 res[p * p + q * q] = true;
             }
         }
-
-        // System.out.println();
 
         return res;
     }
