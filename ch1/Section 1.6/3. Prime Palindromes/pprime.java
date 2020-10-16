@@ -18,7 +18,7 @@ class pprime {
             a++;
         
         // all palindromes of even length are divisible by 11
-        // so all numbers above 10^7 must invalid
+        // so all numbers above 10^7 must be invalid
         // cutting out most of the search space
         b = Math.min(b, 10000000);
 
